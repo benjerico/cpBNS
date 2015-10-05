@@ -18,7 +18,7 @@
                 <li><a href="/home/" class="navigation">Home</a></li>
                 <li><a href="/shop/" class="navigation">Shop</a></li>
                 <li><a href="/about/" class="navigation">About Us</a></li>
-                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/contact/" class="navigation">Contact</a></li>
             </ul>
         </div>
         <div id="content">

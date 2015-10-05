@@ -1,5 +1,4 @@
-﻿
-* {
+﻿* {
     margin: 0;
     padding: 0;
 }
@@ -20,7 +19,13 @@ body
 .banner 
 {
     margin-top: 10px;
-    width: 100%;    
+    width: 100%; 
+    height: 333px;
+    font-family: Tahoma, Sans-Serif;
+    color: Orange;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;   
 }
 
 .logo 
@@ -56,7 +61,13 @@ a:hover
 {
     /*color: #FF8000;  */
     color: #AAC3E5;
-    border-bottom: solid thick #FF8000;  
+    border-bottom: solid thick #FF8000;
+}
+
+a.active  /* use this for an active link */
+{
+    color: #AAC3E5;
+    border-bottom: solid thick #FF8000;
 }
 
 #content
@@ -64,11 +75,11 @@ a:hover
     color: White;
     font-family: Tahoma, Sans-Serif;
     font-size: 1.3em;
-    width: 100%; 
+    width: 100% - 5px; /* -5px to compensate for the thickness of the border */
     text-align: justify; 
     border: solid thick #7c9dcc;
     border-radius: 30px;
-    margin-top: 20px;  
+    margin-top: 10px;  
 }
 
 #content p
