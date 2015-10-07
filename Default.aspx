@@ -15,30 +15,29 @@
         </div>
         <div id="nav">
             <ul class="navList">
-                <li><a href="/home/" class="navigation">Home</a></li>
-                <li><a href="/shop/" class="navigation">Shop</a></li>
-                <li><a href="/about/" class="navigation">About Us</a></li>
-                <li><a href="/contact/" class="navigation">Contact</a></li>
+                <li><a href="/home/" class="">Home</a></li>
+                <li><a href="/shop/" class="">Shop</a></li>
+                <li><a href="/about/" class="">About Us</a></li>
+                <li><a href="/contact/" class="">Contact</a></li>
             </ul>
         </div>
         <div id="content">
-            <p>Ballbag cumbubble twathole wanker poo dick bollocks dick bugger jizzmopper. Cumbubble cunt arse ballbag frig ballbag twot. 
-            Poo arse cunt shit frig cock wanker frig. Wanker twot twathole wanker bugger thundercunt cock. Jizz twat bollocks turd frig 
-            thundercunt minge twathole turd turd fucker. Cunt motherfucker jizz fucker thundercunt frig fuck. Jizz asshole fuckstick 
-            twathole frig turd bollix bloody. Bugger cunt twathole bastard turd turd cumbubble motherfucker bollix twathole. Minge jizz 
-            jizz wanker motherfucker twathole bastard. Wee frig minge jizz cumbubble twat turd turd twathole motherfucker.Jizz cock bloody 
-            twot cumbubble ballbag cunt shit ballbag minge. Wee ballbag bugger arse dick shit jizzmopper cock cock bastard thundercunt. 
-            Poo dick twathole asshole cumbubble cunt.</p> 
+            <p>Welcome to <span class="BNSwords">Bens Not Stallman!</span> If Ben isn't Stallman, then who is? We'll let you figure
+            it out! We're not here to split hairs, we're here to sell you the BEST <span class="BNSwords">Bens Not Stallman</span> gear
+            at the BEST prices! We are so confident that we have the lowest prices on all your BNS gear that we will price match our 
+            compeditors! How can we be so confident, you ask? The answer is simple: We literally have no competition! Bring. It. On.</p> 
             
-            <p>Shit twathole twot piss cumbubble fucker. Jizz wanker fuckstick fuck wee arse bloody. 
-            Bugger fuck cunt poo bloody minge motherfucker motherfucker poo fuckstick. Ballbag wee motherfucker twathole arse asshole 
-            frig ballbag minge bugger wee. Bollix frig minge twathole fuckstick cunt ballbag. Wee fucker bollix turd poo twathole arse 
-            dick fuckstick. Minge thundercunt asshole thundercunt jizz poo piss bloody arse jizz asshole.Arse fuckstick turd asshole 
-            bastard twathole arse. Arse cunt motherfucker bollix jizz twathole fucker turd cunt fuck fuck. Fuck twathole arse bloody 
-            minge ballbag. Frig cock piss cumbubble motherfucker dick jizzmopper fuck fuckstick. Bollocks ballbag shit cunt turd motherfucker 
-            fuckstick bastard bollix cunt wee. Turd piss wee bugger wee piss fuck arse jizz bastard arse. Dick cumbubble cock arse twot 
-            fuck. Poo jizz turd bastard turd shit shit ballbag minge bloody fuck. Jizzmopper wanker cunt frig twot twathole bollix piss 
-            bugger. Arse twathole poo asshole frig bloody</p>
+            <p>In all seriousness, Ben is not Stallman, but he sorta looks like him. This site is a celebration of that phenomenon.
+            Sticking with the ever clever <a href="http://www.gnu.org/gnu/gnu-history.en.html" >naming scheme</a> 
+            of the great <a href="https://stallman.org" />Richard M. Stallman</a>, we made our own pun, and are running wild with it!
+            So who is Ben? He's the face you want on your coffee mug. He's an enigma wrapped in a mystery. He is the echo of your
+            heart strings. But best of all, he's not Stallman; something we can all be grateful for.</p>
+            
+            <p>Still not sure what this is all about? That's fine. Start your journey to understanding by purchasing our fine wares.
+            You may be confused, but you'll surely not be disappointed!</p>
+        </div>
+        <div id="footer">
+            <p>All rights reserved. The use of Ben's face and all related content blah blah blah legal stuff.</p>
         </div>
     </div>
 </body>
