@@ -121,6 +121,7 @@ a.active  /* use this for an active link */
 
 img.ben
 {
+    box-shadow: 2px 2px 2px black; 
     margin: 20px;
     float: left;
     height: 200px;
@@ -129,11 +130,13 @@ img.ben
 
 img.scott
 {
+    box-shadow: 2px 2px 2px black; 
     margin: 20px;
     float: right;
     height: 244px;
     width: 197px;    
 }
+
 
 
 
