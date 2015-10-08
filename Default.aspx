@@ -15,10 +15,10 @@
         </div>
         <div id="nav">
             <ul class="navList">
-                <li><a href="/home/" class="">Home</a></li>
+                <li><a href="default.aspx" class="">Home</a></li>
                 <li><a href="/shop/" class="">Shop</a></li>
-                <li><a href="/about/" class="">About Us</a></li>
-                <li><a href="/contact/" class="">Contact</a></li>
+                <li><a href="AboutUs.htm" class="">About Us</a></li>
+                <li><a href="Contact.aspx" class="">Contact</a></li>
             </ul>
         </div>
         <div id="content">
@@ -29,7 +29,7 @@
             
             <p>In all seriousness, Ben is not Stallman, but he sorta looks like him. This site is a celebration of that phenomenon.
             Sticking with the ever clever <a href="http://www.gnu.org/gnu/gnu-history.en.html" >naming scheme</a> 
-            of the great <a href="https://stallman.org" />Richard M. Stallman</a>, we made our own pun, and are running wild with it!
+            of the great <a href="https://stallman.org" >Richard M. Stallman</a>, we made our own pun, and are running wild with it!
             So who is Ben? He's the face you want on your coffee mug. He's an enigma wrapped in a mystery. He is the echo of your
             heart strings. But best of all, he's not Stallman; something we can all be grateful for.</p>
             
