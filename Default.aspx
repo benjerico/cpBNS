@@ -17,8 +17,8 @@
             <ul class="navList">
                 <li><a href="/home/" class="">Home</a></li>
                 <li><a href="/shop/" class="">Shop</a></li>
-                <li><a href="/about/" class="">About Us</a></li>
-                <li><a href="/contact/" class="">Contact</a></li>
+                <li><a href="AboutUs.htm" class="">About Us</a></li>
+                <li><a href="Contact.aspx" class="">Contact</a></li>
             </ul>
         </div>
         <div id="content">
