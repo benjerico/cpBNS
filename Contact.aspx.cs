@@ -23,6 +23,7 @@ public partial class Contact : System.Web.UI.Page
             string messageBody = message.Text;
             MailMessage emailMessage = new MailMessage();
             string messageTo = "holbenr@dunwoody.edu";
+            //string messageTo = "bensnotstallman@gmail.com";
             MailAddress address = new MailAddress(messageTo);
             emailMessage.To.Add(address);
             emailMessage.Subject = messageSubject;
