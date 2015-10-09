@@ -78,7 +78,7 @@
                 <p class="textNext">
                 Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
                 form and we will get back to you in a timely fashion. We appreciate your interest in <span class="BNSwords">
-                Bens Not Stallman</span> products and hope you have a wonderful day!
+                Ben's Not Stallman</span> products and hope you have a wonderful day!
                 </p>
                 
             
