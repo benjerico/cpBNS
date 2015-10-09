@@ -62,7 +62,8 @@
                         Your Email:
                         <asp:TextBox ID="senderEmail" runat="server" Width="255px" /><br />
                         <asp:RegularExpressionValidator ID="fromValidator" runat="server" ErrorMessage="Richard Stallman doesn't like your email" ControlToValidate="senderEmail" ValidationExpression="^([\w_\d]{1,35})((\.?[+]?[\w_\d]{1,10})?){3}?\@[\d\w-_]{1,20}\..{2,5}$">*Richard Stallmen Doesn't like your email.*</asp:RegularExpressionValidator>
-                        Message to the Boys:<br />
+                        <br />
+                        <span style="float: left;">Message to the Boys:</span><br /> <%--added another break and floated the message left.--%>
                         <asp:TextBox ID="message" runat="server" Width="300px" TextMode="MultiLine" Height="100" /><br />
                         <asp:RequiredFieldValidator ID="messageValidator" runat="server" ErrorMessage="Please leave us a message. We really want to hear from you" ControlToValidate="message">Please leave us a message. We really want to hear from you</asp:RequiredFieldValidator>
                     </p>
@@ -75,7 +76,9 @@
                 <asp:Literal ID="sentEmail" runat="server" Visible="False"></asp:Literal>
             </form>
                 <p class="textNext">
-                Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+                Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
+                form and we will get back to you in a timely fashion. We appreciate your interest in <span class="BNSwords">
+                Bens Not Stallman</span> products and hope you have a wonderful day!
                 </p>
                 
             
