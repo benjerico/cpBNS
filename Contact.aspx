@@ -61,7 +61,7 @@
                         <asp:RequiredFieldValidator ID="lastNameValidator" runat="server" ErrorMessage="**" ControlToValidate="firstName">**</asp:RequiredFieldValidator><br />
                         Your Email:
                         <asp:TextBox ID="senderEmail" runat="server" Width="255px" /><br />
-                        <asp:RegularExpressionValidator ID="fromValidator" runat="server" ErrorMessage="Richard Stallmen doesn't like your email" ControlToValidate="senderEmail" ValidationExpression="^([\w_\d]{1,35})((\.?[+]?[\w_\d]{1,10})?){3}?\@[\d\w-_]{1,20}\..{2,5}$">*Richard Stallmen Doesn't like your email.*</asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="fromValidator" runat="server" ErrorMessage="Richard Stallmen doesn't like your email" ControlToValidate="senderEmail" ValidationExpression="^([\w_\d]{1,35})((\.?[+]?[\w_\d]{1,10})?){3}?\@[\d\w-_]{1,20}\..{2,5}$">*Richard Stallmen Doesn't like your email.*</asp:RegularExpressionValidator><br />
                         Message to the Boys:<br />
                         <asp:TextBox ID="message" runat="server" Width="300px" TextMode="MultiLine" Height="100" /><br />
                         <asp:RequiredFieldValidator ID="messageValidator" runat="server" ErrorMessage="Please leave us a message. We really want to hear from you" ControlToValidate="message">Please leave us a message. We really want to hear from you</asp:RequiredFieldValidator>

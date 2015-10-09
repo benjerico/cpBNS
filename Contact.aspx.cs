@@ -19,7 +19,7 @@ public partial class Contact : System.Web.UI.Page
             MailAddress messageFrom = new MailAddress(
                 senderEmail.Text.ToLower().Trim()
                 , senderEmail.Text);
-            string messageSubject = "Words from " + firstName.Text + lastName.Text;
+            string messageSubject = "Words from " + firstName.Text + " " + lastName.Text;
             string messageBody = message.Text;
             MailMessage emailMessage = new MailMessage();
             string messageTo = "holbenr@dunwoody.edu";
