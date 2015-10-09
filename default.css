@@ -121,7 +121,7 @@ a.active  /* use this for an active link */
 
 img.ben
 {
-    box-shadow: 2px 2px 2px black; 
+    box-shadow: 5px 5px 5px black;
     margin: 20px;
     float: left;
     height: 200px;
@@ -130,11 +130,20 @@ img.ben
 
 img.scott
 {
-    box-shadow: 2px 2px 2px black; 
+    box-shadow: 5px 5px 5px black; 
     margin: 20px;
     float: right;
     height: 244px;
     width: 197px;    
+}
+
+.contentHeader
+{
+    color: #FFE994;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    opacity: 0.7;   
+    margin: 15px; 
 }
 
 
