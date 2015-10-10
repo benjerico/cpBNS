@@ -35,6 +35,7 @@ public partial class Contact : System.Web.UI.Page
 
             contactUs.Visible = false;
             sentEmail.Visible = true;
+            hideMe.Visible = false;
             sentEmail.Text = "<p>The following message was sent successfully </p>";
           }
 
