@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AboutUs.aspx.cs" Inherits="AboutUs" %>
+<%@ Register TagPrefix="uc" TagName="Navigation" Src="navigation.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,12 +16,7 @@
             </div>
         </div>
         <div id="nav">
-            <ul class="navList">
-                <li><a href="default.aspx" class="">Home</a></li>
-                <li><a href="/shop/" class="">Shop</a></li>
-                <li><a href="AboutUs.htm" class="active">About Us</a></li>
-                <li><a href="Contact.aspx" class="">Contact</a></li>
-            </ul>
+            <uc:navigation ID="Navigation" runat="server" />
         </div>
         <div id="content">
             <h2 class="contentHeader">"Anything worth doing, is worth doing well"</h2>

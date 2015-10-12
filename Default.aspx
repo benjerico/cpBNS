@@ -1,6 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Register TagPrefix="uc" TagName="Navigation" Src="navigation.ascx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head id="Head1" runat="server">
     <title>BNS</title>
@@ -14,12 +17,7 @@
             </div>
         </div>
         <div id="nav">
-            <ul class="navList">
-                <li><a href="default.aspx" class="">Home</a></li>
-                <li><a href="/shop/" class="">Shop</a></li>
-                <li><a href="AboutUs.htm" class="">About Us</a></li>
-                <li><a href="Contact.aspx" class="">Contact</a></li>
-            </ul>
+            <uc:navigation ID="Navigation" runat="server" />
         </div>
         <div id="content">
             <p>Welcome to <span class="BNSwords">Ben's Not Stallman!</span> If Ben isn't Stallman, then who is? We'll let you figure
