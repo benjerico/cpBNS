@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" Debug="true" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="Contact" %>
+<%@ Register TagPrefix="uc" TagName="Navigation" Src="navigation.ascx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -37,16 +38,11 @@
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img class="banner" src="headerLogo.png" alt="Banner Logo" />
+                <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
             </div>
         </div>
         <div id="nav">
-            <ul class="navList">
-                <li><a href="Default.aspx" class="">Home</a></li>
-                <li><a href="/shop/" class="">Shop</a></li>
-                <li><a href="AboutUs.htm" class="">About Us</a></li>
-                <li><a href="Contact.aspx" class="active">Contact</a></li>
-            </ul>
+            <uc:navigation ID="Navigation" runat="server" />
         </div>
         <div id="content">
             <h2>Contact Us</h2>
@@ -75,18 +71,20 @@
                     </p>
 
                     <div id="submitBar">
-                        <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/b1.gif" />
+                        <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/images/b1.gif" />
 
                     </div>
                 </asp:Panel>
                 <asp:Literal ID="sentEmail" runat="server" Visible="False"></asp:Literal>
+                <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
             </form>
             <div id="hideMe" runat="server">
                 <p class="textNext">
                     Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
                     form and we will get back to you in a timely fashion. We appreciate your interest in <span class="BNSwords">
                     Ben's Not Stallman</span> products and hope you have a wonderful day!
-                </p>
+                </p>   
+
             </div>
                 
             
