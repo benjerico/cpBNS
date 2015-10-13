@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" Debug="true" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="Contact" %>
+<%@ Register TagPrefix="uc" TagName="Navigation" Src="navigation.ascx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -41,12 +42,7 @@
             </div>
         </div>
         <div id="nav">
-            <ul class="navList">
-                <li><a href="Default.aspx" class="">Home</a></li>
-                <li><a href="/shop/" class="">Shop</a></li>
-                <li><a href="AboutUs.htm" class="">About Us</a></li>
-                <li><a href="Contact.aspx" class="active">Contact</a></li>
-            </ul>
+            <uc:navigation ID="Navigation" runat="server" />
         </div>
         <div id="content">
             <h2>Contact Us</h2>
@@ -65,7 +61,7 @@
                         <asp:TextBox ID="senderEmail" runat="server" Width="255px" /><br />
                         <asp:RegularExpressionValidator ID="fromValidator" runat="server" ErrorMessage="Richard Stallman doesn't like your email" 
                             ControlToValidate="senderEmail" ValidationExpression="^([\w_\d]{1,35})((\.?[+]?[\w_\d]{1,10})?){3}?\@[\d\w-_]{1,20}\..{2,5}$">
-                            *Richard Stallmen Doesn't like your email.*</asp:RegularExpressionValidator>
+                            *Richard Stallman Doesn't like your email.*</asp:RegularExpressionValidator>
                         <br />
                         <span style="float: left;">Message to the Boys:</span><br /> <%--added another break and floated the message left.--%>
                         <asp:TextBox ID="message" runat="server" Width="300px" TextMode="MultiLine" Height="100" /><br />
@@ -88,6 +84,8 @@
                     Ben's Not Stallman</span> products and hope you have a wonderful day!
                 </p>
             </div>
+            
+            <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
                 
             
         </div>
