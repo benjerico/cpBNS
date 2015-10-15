@@ -10,7 +10,9 @@ body
 
 #wrapper 
 {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 625px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,12 +49,12 @@ body
 {
     text-decoration: none;
     display: inline-block;
-    width: 200px;
+    width: 20%;
     color: White;
     font-family: Trebuche MS, Sans-Serif;
     font-size: 1.6em;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1%;
     border-bottom: solid thick gray;
     text-shadow: 1px 2px black;
 }
@@ -108,7 +110,7 @@ a.active  /* use this for an active link */
 
 #content p
 {
-    padding: 20px;   
+    padding: 20px;  
 }
 
 #footer p
@@ -144,6 +146,34 @@ img.scott
     text-align: center;
     opacity: 0.7;   
     margin: 15px; 
+}
+
+#DropDowns
+{
+    float: left;
+}
+
+.userNumbers
+{
+    color: White;
+    margin: 20px;
+    width: 250px;
+    font-family: Tahoma, Sans-Serif;
+    font-size: 1em;
+    background-color: rgba(210,113,76,0.9);
+    border: solid 3px #7c9dcc;
+    border-radius: 5px;
+}
+
+.gameButton
+{
+    font-family: Tahoma, Sans-Serif;
+    font-size: 0.8em;
+    width: 300px;
+    height: 100px;
+    border: solid 3px #7c9dcc;
+    border-radius: 10px;
+    margin-top: 6%;
 }
 
 
