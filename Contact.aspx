@@ -85,11 +85,7 @@
                 <asp:Literal ID="sentEmail" runat="server" Visible="False"></asp:Literal>
                 <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
             </form>
-<<<<<<< HEAD
-
-            
             <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
-=======
             <div id="hideMe" runat="server">
                 <p class="textNext">
                     Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
@@ -98,9 +94,6 @@
                 </p>   
 
             </div>
->>>>>>> 0f33ca04fb7a4e0616ab0349606ac0579c246b23
-                
-            
         </div>
     </div>
 </body>
