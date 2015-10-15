@@ -48,6 +48,8 @@
             <h2 class="contentHeader" style="margin-bottom: 0">Contact Us</h2>
             <form ID="contactUsForm" runat="server">
                 <asp:Panel ID="contactUs" runat="server">
+                <asp:Literal ID="sentEmail" runat="server" Visible="False"></asp:Literal>
+                <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
                 <div id="hideMe" runat="server">
                     <p style="padding-top: 0">
                         Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
@@ -76,24 +78,11 @@
                             ErrorMessage="Please leave us a message. We really want to hear from you" ControlToValidate="message">
                             Please leave us a message. We really want to hear from you</asp:RequiredFieldValidator>
                     </p>
-
                     <div id="submitBar">
                         <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/images/b1.gif" />
-
                     </div>
                 </asp:Panel>
-                <asp:Literal ID="sentEmail" runat="server" Visible="False"></asp:Literal>
-                <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
             </form>
-            <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
-            <div id="hideMe" runat="server">
-                <p class="textNext">
-                    Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
-                    form and we will get back to you in a timely fashion. We appreciate your interest in <span class="BNSwords">
-                    Ben's Not Stallman</span> products and hope you have a wonderful day!
-                </p>   
-
-            </div>
         </div>
     </div>
 </body>

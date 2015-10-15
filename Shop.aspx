@@ -13,7 +13,7 @@
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img class="banner" src="headerLogo.png" alt="Banner Logo" />
+                <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
             </div>
         </div>
         <div id="nav">
