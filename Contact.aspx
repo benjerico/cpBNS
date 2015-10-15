@@ -38,7 +38,7 @@
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img class="banner" src="headerLogo.png" alt="Banner Logo" />
+                <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
             </div>
         </div>
         <div id="nav">
@@ -78,15 +78,27 @@
                     </p>
 
                     <div id="submitBar">
-                        <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/b1.gif" />
+                        <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/images/b1.gif" />
 
                     </div>
                 </asp:Panel>
                 <asp:Literal ID="sentEmail" runat="server" Visible="False"></asp:Literal>
+                <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
             </form>
+<<<<<<< HEAD
 
             
             <asp:Literal ID="errorMsg" runat="server" Visible="False"></asp:Literal>
+=======
+            <div id="hideMe" runat="server">
+                <p class="textNext">
+                    Have a question, comment, or concern? We would love to hear from you. Please enter your information in the 
+                    form and we will get back to you in a timely fashion. We appreciate your interest in <span class="BNSwords">
+                    Ben's Not Stallman</span> products and hope you have a wonderful day!
+                </p>   
+
+            </div>
+>>>>>>> 0f33ca04fb7a4e0616ab0349606ac0579c246b23
                 
             
         </div>

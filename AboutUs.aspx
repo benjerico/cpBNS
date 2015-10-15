@@ -12,7 +12,7 @@
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img class="banner" src="headerLogo.png" alt="Banner Logo" />
+                <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
             </div>
         </div>
         <div id="nav">
@@ -20,14 +20,14 @@
         </div>
         <div id="content">
             <h2 class="contentHeader">"Anything worth doing, is worth doing well"</h2>
-            <img class="ben" src="benGoggles_200x200.png" title="NOT Stallman!" alt="This may or may not be Ben" />
+            <img class="ben" src="images/benGoggles_200x200.png" title="NOT Stallman!" alt="This may or may not be Ben" />
             <p><span class="BNSwords">Ben Holmgren.</span> Developer. Blacksmith. Renaissance man. Ben wears more hats than a sombrero model,
              and he wouldn't have it any other way. With a stalwart base of knowledge, life experience, and creative prowess, Ben attacks
              development projects like a kung-fu master. His nickname, "WebFoo", is no surprise. If Ben lived in a box, he would do all of his 
              thinking outside of it. A self-starter with a keen eye for detail, He is the truly built rudder for your project. 
              As the winds of life blow, let Ben be your sail. So sit back, relax, and prepare for a horizon littered with possibility.</p>
              
-            <img class="scott" src="scott_goofball_small.png" title="NOT Ben!" alt="This probably is Scott" />
+            <img class="scott" src="images/scott_goofball_small.png" title="NOT Ben!" alt="This probably is Scott" />
             <p><span class="BNSwords">Scott Duncan.</span> Coming from a manufacturing background, 
             Scott has the ability to fine tune your project with a precision rivled only by a Swiss timepiece. With a healthy dose of obsessive 
             compulsion, laser focus, and creative musings, you can be sure that no detail will be left unnoticed. Scott has often been acused 
