@@ -15,9 +15,7 @@
                 <img class="banner" src="images/headerLogo.png" alt="Welcome to Ben's Not Stallman! Sorry our awesome logo didn't load for you." />
             </div>
         </div>
-        <div id="nav">
             <uc:navigation ID="Navigation" runat="server" />
-        </div>
         <div id="content">
             <h2 class="contentHeader" style="margin-bottom: 0">Contact Us</h2>
             <form ID="contactUsForm" runat="server">

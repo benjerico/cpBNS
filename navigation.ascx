@@ -2,11 +2,13 @@
 
 <link rel="Stylesheet" href="default.css" type="text/css" />
 
-<ul class="navList">
-    <li><a href="default.aspx" class="">Home</a></li>
-    <li><a href="Shop.aspx" class="">Shop</a></li>
-    <li><a href="AboutUs.aspx" class="">About</a></li>
-    <li><a href="Contact.aspx" class="">Contact</a></li>
-    <li><a href="Game.aspx" class="">Lotto</a></li>
-</ul>
+<div id="nav" runat="server">
+    <ul class="navList">
+        <li><asp:HyperLink ID="Home" runat="server" href="default.aspx">Home</asp:HyperLink></li>
+        <li><asp:HyperLink ID="Shop" runat="server" href="Shop.aspx">Shop</asp:HyperLink></li>
+        <li><asp:HyperLink ID="About" runat="server" href="AboutUs.aspx">About</asp:HyperLink></li>
+        <li><asp:HyperLink ID="Contact" runat="server" href="Contact.aspx">Contact</asp:HyperLink></li>
+        <li><asp:HyperLink ID="Lotto" runat="server" href="Game.aspx">Lotto</asp:HyperLink></li>
+    </ul>
+</div>
 

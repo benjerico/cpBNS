@@ -15,9 +15,7 @@
                 <img class="banner" src="images/headerLogo.png" alt="Welcome to Ben's Not Stallman! Sorry our awesome logo didn't load for you." />
             </div>
         </div>
-        <div id="nav">
             <uc:navigation ID="Navigation" runat="server" />
-        </div>
         <div id="content">
             <h2 class="contentHeader">"Anything worth doing, is worth doing well"</h2>
             <img class="ben" src="images/benGoggles_200x200.png" title="NOT Stallman!" alt="This may or may not be Ben" />

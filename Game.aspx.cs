@@ -135,7 +135,7 @@ public partial class Game : System.Web.UI.Page
         else if (match == 1) //1 match
         {
             matches.Text = String.Format("You made {0} match!!", match);
-            winnings.Text = String.Format("You win... 1 cent of your next purchase! Yup, seriously.");
+            winnings.Text = String.Format("You win... 1 cent off your next purchase! Yup, seriously.");
         }
         else //No matches
         {

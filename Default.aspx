@@ -16,9 +16,7 @@
                 <img class="banner" src="images/headerLogo.png" alt="Welcome to Ben's Not Stallman! Sorry our awesome logo didn't load for you." />
             </div>
         </div>
-        <div id="nav">
             <uc:navigation ID="Navigation" runat="server" />
-        </div>
         <div id="content">
             <p>Welcome to <span class="BNSwords">Ben's Not Stallman!</span> If Ben isn't Stallman, then who is? We'll let you figure
             it out! We're not here to split hairs, we're here to sell you the BEST <span class="BNSwords">Ben's Not Stallman</span> gear

@@ -8,17 +8,28 @@
 <head id="Head1" runat="server">
     <title>BNS</title>
     <link rel="Stylesheet" href="default.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
+
+    <script type="text/javascript">
+        // First to load
+        $(document).ready(function() {
+            $(".load_one").hide(0).delay(500).fadeIn(1000);
+        });
+        // Second to load
+        $(document).ready(function() {
+            $(".load_two").hide(0).delay(3000).fadeIn(2000);
+        });
+    </script>
+
     <div id="wrapper">
         <div id="header">
             <div class="logo">
                 <img class="banner" src="images/headerLogo.png" alt="Welcome to Ben's Not Stallman! Sorry our awesome logo didn't load for you." />
             </div>
         </div>
-        <div id="nav">
             <uc:navigation ID="Navigation" runat="server" />
-        </div>
         <div id="content">
             <form id="gameBoard" runat="server" >
             <h2 class="contentHeader" style="margin-bottom: 0">Feelin' Lucky?</h2>
@@ -56,14 +67,14 @@
                     </asp:DropDownList>
                 </div>
                 <asp:Button ID="ShowWinNums" runat="server" Text="Show me Stallman's numbers!" class="gameButton" OnClick="ShowWinNums_Click" />
-                <div id="CompsNums" runat="server" visible="false">
+                <div id="CompsNums" runat="server" visible="false" class="load_one">
                     <asp:Label ID="CompFirstNum" runat="server" Visible="false"></asp:Label>
                     <br />
                     <asp:Label ID="CompSecondNum" runat="server" Visible="false"></asp:Label>
                     <br />
                     <asp:Label ID="CompThirdNum" runat="server" Visible="false"></asp:Label>
                 </div>
-                <div id="winningsLabels" runat="server" visible="false">
+                <div id="winningsLabels" runat="server" visible="false" class="load_two">
                     <asp:Label ID="matches" runat="server"></asp:Label>
                     <br /><br />
                     <asp:Label ID="winnings" runat="server"></asp:Label>

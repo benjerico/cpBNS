@@ -16,9 +16,7 @@
                 <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
             </div>
         </div>
-        <div id="nav">
             <uc:navigation ID="Navigation" runat="server" />
-        </div>
         <div id="content">
             <p>This page is under construction</p>
         </div>
