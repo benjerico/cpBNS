@@ -7,38 +7,12 @@
 <head id="Head1" runat="server">
     <title>BNS</title>
     <link rel="Stylesheet" href="default.css" type="text/css" />
-    <style>
-    
-    #content h2
-    {
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-    
-    #contactUs
-    {
-        margin: 5px;
-        padding: 10px;
-        float:left;
-    }
-    
-    #submitImage
-    {
-       margin-left: 20px;
-    }
-    
-    #cancelImage
-    {
-        margin-left: 20px;
-    }
-    
-    </style>
 </head>
 <body>
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
+                <img class="banner" src="images/headerLogo.png" alt="Welcome to Ben's Not Stallman! Sorry our awesome logo didn't load for you." />
             </div>
         </div>
         <div id="nav">

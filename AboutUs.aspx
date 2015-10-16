@@ -12,7 +12,7 @@
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img class="banner" src="images/headerLogo.png" alt="Banner Logo" />
+                <img class="banner" src="images/headerLogo.png" alt="Welcome to Ben's Not Stallman! Sorry our awesome logo didn't load for you." />
             </div>
         </div>
         <div id="nav">
