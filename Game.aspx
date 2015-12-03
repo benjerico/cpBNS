@@ -8,7 +8,7 @@
 <head id="Head1" runat="server">
     <title>BNS</title>
     <link rel="Stylesheet" href="default.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 

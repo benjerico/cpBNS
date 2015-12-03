@@ -18,7 +18,7 @@ body
 {
     width: 100%;
     max-width: 1000px;
-    min-width: 625px;
+    /* min-width: 625px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -97,7 +97,7 @@ a.active  /* use this for an active link */
     color: White;
     font-family: Tahoma, Sans-Serif;
     font-size: 1.3em;
-    width: 100% - 5px; /* -5px to compensate for the thickness of the border */
+    width: 100%-5px; /* -5px to compensate for the thickness of the border */
     text-align: justify; 
     border: solid thick #7c9dcc;
     border-radius: 30px;
@@ -239,7 +239,7 @@ img.scott
 {
     margin: 5px;
     padding: 10px;
-    float:left;
+    float: left;
 }
 
 #submitImage
@@ -251,6 +251,80 @@ img.scott
 {
     margin-left: 20px;
 }
+
+#dataForm p
+{
+    font-size: .6em;
+}
+
+#dataGrid
+{
+    padding: 20px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-size: .8em;
+    width: inherit;
+}
+
+#ProductsGrid
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productsGrid tr, th, td
+{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/*.descriptionLabel
+{
+    margin: 20px;
+}*/
+
+/* Responsive design breakpoints */
+@media(max-width: 580px) 
+{
+    .image
+    {
+        text-align: center;
+    }
+
+    img.ben
+    {
+        float: none; 
+        margin: 0; 
+    }
+
+    img.scott
+    {
+        float: none;  
+        margin: 0; 
+    }
+
+    .navList li
+    {
+        display: block;
+    }
+
+    .navList a
+    {
+        font-size: 1.3em;
+        width: 30%;
+    }
+
+    #content
+    {
+        font-size: 1em;
+    }
+
+    .contentHeader
+    {
+        font-size: 1.2em;
+    }
+
+}/* End of @media 580 resolution */
 
 
 

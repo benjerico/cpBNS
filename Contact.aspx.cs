@@ -11,12 +11,16 @@ public partial class Contact : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Page.Validate();
 
-        if (Page.IsValid)
+    }
+
+    public void submitImage_Click(object sender, EventArgs e)
+    {
+        if (Page.IsPostBack)
         {
             try
             {
+                Response.Write("<p>I tried to send!! I really tried :(</p>");
                 MailAddress messageFrom = new MailAddress(
                     senderEmail.Text.ToLower().Trim()
                     , senderEmail.Text);
@@ -49,10 +53,5 @@ public partial class Contact : System.Web.UI.Page
             {
             }
         }
-
-
-
-        
-    }//end 
-  
+    }
 }

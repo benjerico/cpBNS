@@ -31,27 +31,37 @@
                 </div>
                     <p style="padding-top: 0">
                         First Name:
-                        <asp:TextBox ID="firstName" runat="server" Width="255px" /><br />
-                        <asp:RequiredFieldValidator ID="firstNameValidator" runat="server" ErrorMessage="**" 
-                            ControlToValidate="firstName">**</asp:RequiredFieldValidator><br />
-                        Last Name: 
-                        <asp:TextBox ID="lastName" runat="server" Width="255px" /><br />
-                        <asp:RequiredFieldValidator ID="lastNameValidator" runat="server" ErrorMessage="**" 
-                            ControlToValidate="firstName">**</asp:RequiredFieldValidator><br />
-                        Your Email:
-                        <asp:TextBox ID="senderEmail" runat="server" Width="255px" /><br />
-                        <asp:RegularExpressionValidator ID="fromValidator" runat="server" ErrorMessage="Richard Stallman doesn't like your email" 
-                            ControlToValidate="senderEmail" ValidationExpression="^([\w_\d]{1,35})((\.?[+]?[\w_\d]{1,10})?){3}?\@[\d\w-_]{1,20}\..{2,5}$">
-                            *Richard Stallman Doesn't like your email.*</asp:RegularExpressionValidator>
                         <br />
-                        <span style="float: left;">Message to the Boys:</span><br /> <%--added another break and floated the message left.--%>
-                        <asp:TextBox ID="message" runat="server" Width="300px" TextMode="MultiLine" Height="100" /><br />
+                        <asp:TextBox ID="firstName" runat="server" Width="255px" />
+                        <asp:RequiredFieldValidator ID="firstNameValidator" runat="server" ErrorMessage="Required" 
+                            ControlToValidate="firstName" />
+                        <br /><br />
+
+                        Last Name:
+                        <br /> 
+                        <asp:TextBox ID="lastName" runat="server" Width="255px" />
+                        <asp:RequiredFieldValidator ID="lastNameValidator" runat="server" ErrorMessage="Required" 
+                            ControlToValidate="lastName" />
+                        <br /><br />
+
+                        Your Email:<br />
+                        <asp:TextBox ID="senderEmail" runat="server" Width="255px" />
+                        <asp:RequiredFieldValidator ID="senderEmailValidator" runat="server" ErrorMessage="Required" 
+                            ControlToValidate="senderEmail" />
+                        <br />
+                        <asp:RegularExpressionValidator ID="fromValidator" runat="server" ErrorMessage="Richard Stallman doesn't like your email" 
+                            ControlToValidate="senderEmail" ValidationExpression="^([\w_\d]{1,35})((\.?[+]?[\w_\d]{1,10})?){3}?\@[\d\w-_]{1,20}\..{2,5}$" />
+                        <br />                       
+
+                        Message to the Boys:
+                        <br />
+                        <asp:TextBox ID="message" runat="server" Width="300px" TextMode="MultiLine" Height="100" />
+                        <br />
                         <asp:RequiredFieldValidator ID="messageValidator" runat="server" 
-                            ErrorMessage="Please leave us a message. We really want to hear from you" ControlToValidate="message">
-                            Please leave us a message. We really want to hear from you</asp:RequiredFieldValidator>
+                            ErrorMessage="Please leave us a message. We really want to hear from you" ControlToValidate="message" />
                     </p>
                     <div id="submitBar">
-                        <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/images/b1.gif" />
+                        <asp:ImageButton ID="submitImage" runat="server" ImageUrl="~/images/b1.gif" OnClick="submitImage_Click" />
                     </div>
                 </asp:Panel>
             </form>
