@@ -17,7 +17,7 @@ public partial class Shop : Page
             try
             {
                 string ConnectionString = ConfigurationManager.ConnectionStrings["BenNotStallman"].ConnectionString;
-                string sqlQuery = "SELECT productNum, productName, color, price "
+                string sqlQuery = "SELECT productNum, productName, productDesc, color, price "
                     + " FROM Product; ";
                 SqlDataAdapter productRecords = new SqlDataAdapter(sqlQuery, ConnectionString);
                 DataSet ds = new DataSet();
@@ -40,7 +40,7 @@ public partial class Shop : Page
         {
             string ConnectionString = ConfigurationManager.ConnectionStrings["BenNotStallman"].ConnectionString;
             statusLabel.Text = "Searching for " + searchTerm.Text;
-            string sqlQuery = "SELECT productNum, productName, color, price "
+            string sqlQuery = "SELECT productNum, productName, productDesc, color, price "
                 + " FROM Product "
                 + " WHERE 1=2";
 
@@ -51,6 +51,7 @@ public partial class Shop : Page
                 sqlQuery += " OR productNum like '%" + term + "%' "
                     + " OR productName like '%" + term + "%' "
                     + " OR color like '%" + term + "%' "
+                    + " OR productDesc like '%" + term + "%' "
                     + " OR price like '%" + term + "%' ";
             }
             SqlDataAdapter productRecords = new SqlDataAdapter(sqlQuery, ConnectionString);
@@ -87,7 +88,7 @@ public partial class Shop : Page
             try
             {
                 string ConnectionString = ConfigurationManager.ConnectionStrings["BenNotStallman"].ConnectionString;
-                string sqlQuery = "SELECT productNum, productName, color, price "
+                string sqlQuery = "SELECT productNum, productName, productDesc, color, price "
                     + " FROM Product "
                     + " ORDER BY " + sortExpression + " " + direction;
                 SqlDataAdapter productRecords = new SqlDataAdapter(sqlQuery, ConnectionString);
@@ -121,7 +122,7 @@ public partial class Shop : Page
             try
             {
                 string ConnectionString = ConfigurationManager.ConnectionStrings["BenNotStallman"].ConnectionString;
-                string sqlQuery = "SELECT productNum, productName, color, price "
+                string sqlQuery = "SELECT productNum, productName, productDesc, color, price "
                     + " FROM Product "
                     + " WHERE 1=2";
 
@@ -132,6 +133,7 @@ public partial class Shop : Page
                     sqlQuery += " OR productNum like '%" + term + "%' "
                         + " OR productName like '%" + term + "%' "
                         + " OR color like '%" + term + "%' "
+                        + " OR productDesc like '%" + term + "%' "
                         + " OR price like '%" + term + "%' ";
                 }
                 sqlQuery += " ORDER BY " + sortExpression + " " + direction;

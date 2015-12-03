@@ -274,14 +274,31 @@ img.scott
 
 .productsGrid tr, th, td
 {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid black;
 }
 
-/*.descriptionLabel
+.productsGrid tr
 {
-    margin: 20px;
-}*/
+    background-color: white;
+    color: black;
+}
+
+.productsGrid th
+{
+    background-color: #7c9dcc;
+}
+
+.productsGrid th a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.productsGrid tr:hover
+{
+    background-color: #FF9D39;
+}
 
 /* Responsive design breakpoints */
 @media(max-width: 580px) 

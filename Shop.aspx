@@ -29,26 +29,18 @@
                 </p>
                 <asp:SqlDataSource ID="BenNotStallman" runat="server" />
                 <div id="dataGrid" runat="server">
-                    <asp:GridView class="productsGrid" ID="ProductsGrid" runat="server" CellPadding="10" EnableModelValidation="True" Autogeneratecolumns="false"
-                            ForeColor="#333333" GridLines="None" AllowSorting="True" DataSourceID="" OnSorting="ProductsGrid_Sorting">
-                        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                    <asp:GridView class="productsGrid" ID="ProductsGrid" runat="server" EnableModelValidation="True" Autogeneratecolumns="False" AllowSorting="True" OnSorting="ProductsGrid_Sorting">
                         <Columns>
-                            <%--<asp:boundfield datafield="productNum" headertext="Product Number" SortExpression="productNum" />--%>
                             <asp:TemplateField SortExpression="productNum" headertext="Product Number" >
                                 <ItemTemplate>
                                     <asp:HyperLink ID="nameLink" NavigateUrl='<%# "~/Description.aspx?pid=" + Eval("productNum")%>' Text='<%# Eval("productNum") %>' runat="server" />
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:BoundField DataField="productName" HeaderText="Product Name" SortExpression="productName" />
+                            <asp:BoundField DataField="productDesc" HeaderText="Description" SortExpression="productDesc" />
                             <asp:boundfield DataField="Color" HeaderText="Color" SortExpression="color" />
-                            <asp:boundfield DataField="price" HeaderText="Price" SortExpression="price" />
+                            <asp:boundfield DataField="price" HeaderText="Price" SortExpression="price" DataFormatString="${0:#,###.00}" />
                         </Columns>
-                        <EditRowStyle BackColor="#999999" />
-                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                        <HeaderStyle BackColor="#7c9dcc" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
                     </asp:GridView>
                 </div>
             </form>
