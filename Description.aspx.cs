@@ -11,7 +11,7 @@ using System.Configuration;
 public partial class Description : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
-    {  
+    {
         //Uncomment the following lines to verify that the string is null on page load
         //if (Request.QueryString["productNum"] == null)
         //{
@@ -24,9 +24,12 @@ public partial class Description : System.Web.UI.Page
             dbConnection.Open();
             SqlCommand sqlCommand = new SqlCommand("SELECT * "
                 + " FROM Product "
-                + " WHERE productNum = '"
+                + " WHERE productNum = "
+                + " @productNum", dbConnection);
+            sqlCommand.Parameters.Add("@productNum", SqlDbType.NVarChar);
+            sqlCommand.Parameters["@productNum"].Value = Request.QueryString["pid"].ToString();
                 //+ "CUP001234'", dbConnection);
-                + Request.QueryString["productNum"] + "'", dbConnection);
+                //+ Request.QueryString["productNum"] + "'", dbConnection);
             SqlDataReader productInfo = sqlCommand.ExecuteReader();
             if (productInfo.Read())
             {
