@@ -91,16 +91,6 @@ add constraint FK_GamePlay_customerID
 	foreign key (customerID)
 	references Customer(customerID);
 
-create view vSalesOrderLine_Totals
-as
-
-select SalesOrderLine.salesOrderLineNumber, Sum(SalesOrderLine.quantityOrdered * SalesOrderLine.price) as lineTotal
-from SalesOrderLine
-	join Sales
-	on SalesOrderLine.orderNumber = Sales.orderNumber
-where Sales.orderShipped = 'true'
-group by SalesOrderLine.salesOrderLineNumber;
-
 
 --select customerID, lastPlayed
 --from GamePlay
@@ -146,6 +136,17 @@ create nonclustered index idk_Product_productNumPriceColorProductPhotoThumb
 	, price ASC
 	, color
 );
+
+create view vSalesOrderLine_Totals
+as
+
+select SalesOrderLine.salesOrderLineNumber, Sum(SalesOrderLine.quantityOrdered * SalesOrderLine.price) as lineTotal
+from SalesOrderLine
+	join Sales
+	on SalesOrderLine.orderNumber = Sales.orderNumber
+where Sales.orderShipped = 'true'
+group by SalesOrderLine.salesOrderLineNumber;
+
 insert into Product values('CUP001234', 15.00, 3.00, 'WHITE', 'A001', 5, 50, 'A nice 12oz mug to hold only your choicest beverages.', NULL, NULL, NULL, 'Coffee Cup')
 ;
 insert into Product values('MAT001234', 8.00, 1.12, 'ORANGE', 'A002', 3, 50, 'All your cubical farm friends will rave when they see this beauty, your very own Ben Not Stallmen Mouse pad. Made of organic neoprene this will surely be a delight to your office toils.', NULL, NULL, NULL, 'Mouse Pad')
