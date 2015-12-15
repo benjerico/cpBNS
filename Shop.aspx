@@ -18,7 +18,8 @@
         </div>
             <uc:navigation ID="Navigation" runat="server" />
         <div id="content">
-            <form id="dataForm" runat="server">
+            <p style="padding-bottom: 0px; text-align: center;">Welcome to the BNS store! Click on a product to purchase or get more information.</p>
+            <form id="dataForm" runat="server" class="dataForm">
                 <p>
                     <asp:TextBox ID="searchTerm" runat="server" ></asp:TextBox>
                     <asp:Button ID="searchButton" runat="server" text="Search" OnClick="searchButton_OnClick" />
@@ -29,7 +30,8 @@
                 </p>
                 <asp:SqlDataSource ID="BenNotStallman" runat="server" />
                 <div id="dataGrid" runat="server">
-                    <asp:GridView class="productsGrid" ID="ProductsGrid" runat="server" EnableModelValidation="True" Autogeneratecolumns="False" AllowSorting="True" OnSorting="ProductsGrid_Sorting">
+                    <asp:GridView class="productsGrid" ID="ProductsGrid" runat="server" EnableModelValidation="True" Autogeneratecolumns="False" 
+                        AllowSorting="True" OnSorting="ProductsGrid_Sorting">
                         <Columns>
                             <asp:TemplateField SortExpression="productNum" headertext="Product Number" >
                                 <ItemTemplate>
