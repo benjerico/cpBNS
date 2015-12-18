@@ -17,19 +17,10 @@
             </div>
         </div>
             <uc:navigation ID="Navigation" runat="server" />
-        <div id="content">
+        <div id="content" style="padding: 15px;">
+            <h2 class="contentHeader" style="margin-top: 0;">Your Cart</h2>
             <form id="shoppingCartForm" runat="server" class="dataForm">
-                <asp:SqlDataSource ID="BenNotStallman" runat="server" />
-                <div id="dataGrid" runat="server">
-                    <asp:GridView CssClass="productsGrid" ID="ProductsGrid" runat="server" EnableModelValidation="True" Autogeneratecolumns="False">
-                        <Columns>
-                            <asp:BoundField DataField="productNum" HeaderText="Product ID" />
-                            <asp:BoundField DataField="productName" HeaderText="Product Name" />
-                            <asp:boundfield DataField="Color" HeaderText="Qty" />
-                            <asp:boundfield DataField="price" HeaderText="Price" DataFormatString="${0:#,###.00}" />
-                        </Columns>
-                    </asp:GridView>
-                </div>
+                <asp:Literal ID="CartBody" runat="server"></asp:Literal>
             </form>
         </div>
         <div id="footer">

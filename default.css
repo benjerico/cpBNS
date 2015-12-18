@@ -66,11 +66,17 @@ body
     text-shadow: 1px 2px black;
 }
 
-#content p a:link
+#content p a:link, .tableLink
 {
     text-decoration: none;
     color: #7c9dcc;
-    text-shadow: 1px 1px black;
+    font-weight: bold;
+    text-shadow: 1px 2px black;
+}
+
+.retTable
+{
+
 }
 
 #content p a:visited
@@ -276,6 +282,12 @@ img.scott
 {
     padding: 10px;
     border: 1px solid black;
+}
+
+.tHeader
+{
+    color: #FF9D39;
+    text-shadow: 1px 2px black;
 }
 
 .productsGrid tr

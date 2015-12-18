@@ -18,21 +18,25 @@
         </div>
             <uc:navigation ID="Navigation" runat="server" />
         <div id="content">
-            <p style="padding-bottom: 0px; text-align: center;">Welcome to the BNS store! Click on a product to purchase or get more information.</p>
+            <h2 class="contentHeader" style="margin-bottom: 0;">Welcome to the BNS store! Click 'Buy' to purchase, or click the product
+                number to get more information.</h2>
             <form id="dataForm" runat="server" class="dataForm">
-                <p>
+                <p style="margin-bottom: 0; padding-bottom: 0;">
                     <asp:TextBox ID="searchTerm" runat="server" ></asp:TextBox>
                     <asp:Button ID="searchButton" runat="server" text="Search" OnClick="searchButton_OnClick" />
                     &nbsp;&nbsp;&nbsp;(By default, this will match all results based on your terms.)
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Shopping_Cart.aspx">View cart</a>
                     <br />
                     <asp:Label ID="statusLabel" runat="server" />
                     <br />
                 </p>
                 <asp:SqlDataSource ID="BenNotStallman" runat="server" />
                 <div id="dataGrid" runat="server">
+                    <asp:Literal ID="ProductPage" runat="server"></asp:Literal>
                     <asp:GridView class="productsGrid" ID="ProductsGrid" runat="server" EnableModelValidation="True" Autogeneratecolumns="False" 
-                        AllowSorting="True" OnSorting="ProductsGrid_Sorting">
+                        AllowSorting="True" OnSorting="ProductsGrid_Sorting" OnSelectedIndexChanged="ProductGrid_SelectedIndexChanged" DataKeyNames="productNum">
                         <Columns>
+                            <asp:CommandField ShowSelectButton="True" SelectText="Buy" />
                             <asp:TemplateField SortExpression="productNum" headertext="Product Number" >
                                 <ItemTemplate>
                                     <asp:HyperLink ID="nameLink" NavigateUrl='<%# "~/Description.aspx?pid=" + Eval("productNum")%>' Text='<%# Eval("productNum") %>' runat="server" />
@@ -43,7 +47,7 @@
                             <asp:boundfield DataField="Color" HeaderText="Color" SortExpression="color" />
                             <asp:boundfield DataField="price" HeaderText="Price" SortExpression="price" DataFormatString="${0:#,###.00}" />
                         </Columns>
-                    </asp:GridView>
+                    </asp:GridView>                    
                 </div>
             </form>
         </div>

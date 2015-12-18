@@ -166,4 +166,29 @@ public partial class Shop : Page
             ViewState["SortDirection"] = value;
         }
     }
+
+    protected void ProductGrid_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ShoppingCart curCart;
+        if (Session["savedCart"] == null)
+        {
+            curCart = new ShoppingCart();
+        }
+        else
+        {
+            curCart = (ShoppingCart)Session["savedCart"];
+        }
+        string foo = ProductsGrid.SelectedValue.ToString();
+        //bool addResult = 
+        curCart.addItem(foo);
+        //if (addResult == false)
+        //{
+            //ProductPage.Text = "Already selected";
+        //}
+        //else
+        //{
+            Session["savedCart"] = curCart;
+            Response.Redirect("shopping_cart.aspx");
+        //}
+    }
 }
